@@ -33,7 +33,7 @@ export default function AddDataDialog(props) {
             try {
                 const res = await axios.post('/api/posts', blog);
                 if (res.status === 201) {
-                    toast.success("پست با موفقیت ثبت شد")
+                    toast.success("بلا با موفقیت ثبت شد")
                     handleReset()
                 }
             } catch (error) {
@@ -74,7 +74,7 @@ export default function AddDataDialog(props) {
                             </button>
                         </div>
                         <div className="flex justify-center mb-7">
-                            <h3 className="text-[1.1rem]">پست جدید</h3>
+                            <h3 className="text-[1.1rem]">بلاگ جدید</h3>
                         </div>
                         <form className="flex flex-col gap-5" onSubmit={formik.handleSubmit} method="POST">
                             <div>

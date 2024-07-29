@@ -32,8 +32,8 @@ export default function EditInfoDialog(props) {
             setLoadingButton(true)
             try {
                 const res = await axios.put(`/api/posts/${props.editInfoTarget?._id}`, blog);
-                if (res.status === 201) {
-                    toast.success("پست با موفقیت ویرایش شد")
+                if (res.status === 200) {
+                    toast.success("بلاگ با موفقیت ویرایش شد")
                     handleReset()
                 }
             } catch (error) {
@@ -80,7 +80,7 @@ export default function EditInfoDialog(props) {
                             </button>
                         </div>
                         <div className="flex justify-center mb-7">
-                            <h3 className="text-[1.1rem]">ویرایش پست</h3>
+                            <h3 className="text-[1.1rem]">ویرایش بلاگ</h3>
                         </div>
                         <form className="flex flex-col gap-5" onSubmit={formik.handleSubmit} method="POST">
                             <div>

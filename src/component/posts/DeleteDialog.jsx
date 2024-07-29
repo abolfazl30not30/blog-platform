@@ -18,7 +18,7 @@ export default function DeleteDialog(props) {
         try {
             const res = await axios.delete(`/api/posts/${props.deleteTargetId}`);
             if (res.status === 201) {
-                toast.success("پست با موفقیت حذف شد")
+                toast.success("بلاگ با موفقیت حذف شد")
             }
         } catch (error) {
             toast.error("سیستم با خطا رو به رو شده است")
@@ -54,7 +54,7 @@ export default function DeleteDialog(props) {
                             <h3 className="text-[1.2rem]">حذف</h3>
                         </div>
                         <div className="flex  justify-center">
-                            <h2 >آیا از حذف این پست مطمئن هستید؟</h2>
+                            <h2 >آیا از حذف این بلاگ مطمئن هستید؟</h2>
                         </div>
                         <div className="flex justify-center mt-10 gap-4">
                             <div>

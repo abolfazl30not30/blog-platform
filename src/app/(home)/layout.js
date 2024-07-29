@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <>
       <Navbar />
-      <div className="px-7 md:px-20 mt-9">
+      <div className="px-7 md:px-20 ">
           <CacheProvider value={cacheRtl}>
               {children}
           </CacheProvider>

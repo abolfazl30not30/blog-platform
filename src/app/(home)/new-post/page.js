@@ -78,24 +78,24 @@ export default function page() {
 
     return (
         <>
-            <div className="flex  justify-center">
+            <div className="flex  justify-center mt-9">
                 <div className="w-[95%] md:w-[80%] gap-5  flex flex-col justify-center">
-                    <div className="flex justify-between">
+                    <div className=" rounded flex justify-between">
                         <div>
                             <h3 className="text-[1.5rem] font-bold">فهرست بلاگ ها</h3>
                         </div>
                         <div>
-                            <button className="bg-mainBlue py-2 px-5 text-white rounded" onClick={handleOpenAddData}>افرودن بلاگ</button>
+                            <button className="bg-mainBlue py-2 px-5 text-white rounded" onClick={handleOpenAddData}>افزودن بلاگ</button>
                         </div>
                     </div>
                     <div className="mt-10">
                         <div className="overflow-x-auto">
                             <table
                                 className=" w-full table-auto overflow-scroll border-collapse border-spacing-0 text-sm text-center text-gray70  ">
-                                <thead className="text-[0.9rem] text-gray80  bg-[#F8F8F8] md:bg-[#F2EDED] ">
+                                <thead className="text-[0.9rem] text-gray80  md:bg-[#F2EDED] ">
                                 <tr>
                                     <th className="hidden md:table-cell px-6 py-4">#</th>
-                                    <th className="px-2 md:px-6 py-4">عنوان</th>
+                                    <th className="px-2 md:px-6 py-4">عنوان بلاگ</th>
                                     <th className="px-2 md:px-6 py-4">عملیات</th>
                                 </tr>
                                 </thead>
@@ -120,11 +120,6 @@ export default function page() {
                                                     scope="row"
                                                     className="flex gap-2 px-6 py-4 justify-center text-gray70 whitespace-nowrap "
                                                 >
-                                                    <Skeleton
-                                                        variant="rounded"
-                                                        width={23}
-                                                        height={23}
-                                                    />
                                                     <Skeleton
                                                         variant="rounded"
                                                         width={23}

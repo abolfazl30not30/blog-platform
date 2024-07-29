@@ -74,14 +74,14 @@ function Navbar() {
                                                 ? "flex gap-1 font-bold text-mainBlue text-[0.9rem]"
                                                 : "flex gap-1 font-bold text-mainBlue opacity-70 hover:text-neutral-500 text-[0.9rem]"
                                         }>
-                                        پست جدید
+                                        بلاگ جدید
                                     </div>
                                 </Link>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="absolute left-0 right-0 transition-all duration-700 md:hidden z-10" style={isShowNavbar ? {top: "5rem"} : {top: "-30rem"}}>
+                <div className="absolute left-0 right-0 transition-all duration-700 md:hidden z-10" style={isShowNavbar ? {top: "6rem"} : {top: "-9rem"}}>
                     <div className=" px-10 pb-4 bg-[#07A0E6]">
                         <ul className="flex flex-col">
                             <li className=""><Link href="/" className="font-[200] block p-4 hover:bg-[#1aadf1]"
@@ -90,7 +90,7 @@ function Navbar() {
 
                             <li className=""><Link href="/new-post" className="font-[200] block p-4 hover:bg-[#1aadf1]"
                                                    onClick={handleToggleNavbar}><span
-                                className={pathname === "/new-post" ? "activeNavLink" : "text-white"}>پست جدید</span></Link>
+                                className={pathname === "/new-post" ? "activeNavLink" : "text-white"}>بلاگ جدید</span></Link>
                             </li>
                         </ul>
                     </div>
