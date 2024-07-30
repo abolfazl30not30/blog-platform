@@ -8,8 +8,6 @@
 5. [API Routes](#api-routes)
 6. [Frontend Components](#frontend-components)
 7. [Deployment](#deployment)
-8. [Contributing](#contributing)
-9. [License](#license)
 
 ## Introduction
 This project is a full-featured blogging platform built using Next.js. It allows users to create, read, update, and delete blog posts. The application is designed to be performant and scalable, leveraging Next.js' server-side rendering capabilities and MongoDB for data storage.
@@ -40,8 +38,8 @@ This project is a full-featured blogging platform built using Next.js. It allows
 ### Steps
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/blogging-platform.git
-   cd blogging-platform
+   git clone https://github.com/abolfazl30not30/blog-platform/
+   cd blog-platform
    ```
 
 2. **Install dependencies**:
