@@ -33,7 +33,7 @@ export default function AddDataDialog(props) {
             try {
                 const res = await axios.post('/api/posts', blog);
                 if (res.status === 201) {
-                    toast.success("بلا با موفقیت ثبت شد")
+                    toast.success("بلاگ با موفقیت ثبت شد")
                     handleReset()
                 }
             } catch (error) {
