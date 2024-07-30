@@ -29,7 +29,7 @@ export default function postDetails({}) {
     return (
         <>
             <div className="flex items-center justify-center flex-col mb-10 mt-9">
-                <div className="w-[70%] gap-3  flex items-center flex-col border border-neutral-400 p-10 rounded">
+                <div className="w-full md:w-[70%] gap-3  flex items-center flex-col border border-neutral-400 p-10 rounded">
                     <div className="">
                         <Image src="/blog.jpg" alt="logo" width={0}
                                height={0}
